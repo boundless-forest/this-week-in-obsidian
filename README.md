@@ -1,46 +1,19 @@
-# this-week-in-obsidian
+# This Week in Obsidian
+
+![Banner](assets/banner.png)
+
+**This Week in Obsidian** is a weekly newsletter published every Tuesday, dedicated to tracking the progress and community of [Obsidian](https://obsidian.md/). Our target audience includes Obsidian users, plugin developers, and knowledge management enthusiasts who want to stay up-to-date with the latest gems, plugins, themes, and workflows.
+
+[Subscribe on Substack](https://substack.com/@thisweekinobsidian) to get the latest issue in your inbox.
 
 ## Workflow
 
-### Weekly Cycle
-
-#### 1. Start a New Draft
-
-At the beginning of the week (or right after publishing the previous issue):
-1. Copy the template from `templates/newsletter-template.md` to `drafts/`.
-2. Name it with the upcoming Tuesday's date, e.g., `YYYY-MM-DD-issue-XX.md`.
-3. Update the Frontmatter `date` and the Title date in the file.
-
-#### 2. Curate Content
-
-Throughout the week, add interesting links, plugins, and news to the draft file.
-- Use standard Markdown.
-- Keep descriptions concise.
-- Credit authors.
-
-#### 3. Review and Polish (Monday/Tuesday)
-
-- Proofread the content.
-- Check all links.
-- Ensure formatting is consistent.
-
-#### 4. Publish (Tuesday)
-
-1. Copy the content from the Markdown file.
-2. Paste it into the Substack editor.
-   - *Note: Substack handles Markdown well, but check the preview.*
-3. Publish on Substack.
-
-#### 5. Archive
-
-1. Move the published file from `drafts/` to `archive/YYYY/`.
-2. Commit and push changes to GitHub.
+The production cycle is straightforward: we start a new draft at the beginning of the week using the CLI tool, curate content (news, plugins, tips) throughout the week, review and polish the draft on Monday or Tuesday, publish it to Substack, and finally archive the published issue using the CLI tool.
 
 ## Folder Structure
 
-- **drafts/**: Work in progress.
-- **archive/**: Past issues organized by year.
-- **templates/**: Standard layout for the newsletter.
-- **assets/**: Images and static files.
-- **scripts/**: Helper scripts (future automation).
-
+- **drafts/**: Contains the current work-in-progress newsletter issue.
+- **archive/**: Stores past issues organized by year (e.g., `archive/2025/`).
+- **templates/**: Holds the standard Markdown template for new issues.
+- **assets/**: Stores images and static resources.
+- **scripts/**: Contains helper scripts for automation.

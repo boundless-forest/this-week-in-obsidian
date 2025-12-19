@@ -1,44 +1,34 @@
 # This Week in Obsidian - [Date]
 
-Hello and welcome to another issue of **This Week in Obsidian**! [Obsidian](https://obsidian.md/) is a powerful knowledge base on top of a local folder of plain text Markdown files. This is a weekly summary of its progress and community.
+Hello and welcome to another issue of **This Week in Obsidian**! 
 
-*This Week in Obsidian* is openly developed on [GitHub](https://github.com/boundless-forest/this-week-in-obsidian). You can contribute, report errors, or suggest content via PR or by tagging us at [@boundless4orest](https://x.com/boundless4orest) on X.
+[Obsidian](https://obsidian.md/) is a powerful knowledge base that works on top of a local folder of plain text Markdown files. This newsletter provides a weekly roundup of Obsidian's development and community highlights.
+*This Week in Obsidian* is openly developed on [GitHub](https://github.com/boundless-forest/this-week-in-obsidian). Contributions are welcome—you can submit PRs, report issues, or suggest content by reaching out to [@boundless4orest](https://x.com/boundless4orest) on X.
 
 Want *This Week in Obsidian* in your inbox? [Subscribe here](https://substack.com/@thisweekinobsidian).
 
 ## 📢 Official Announcements
 
-*Official news from the Obsidian team.*
+- [Title](link)
 
-## 💎 Gems of the Week
+## 💎 Gem of the Week
 
-*Highlight of the week: a plugin, a theme, or a workflow.*
+[Plugin Name](link) by author is a plugin that...
 
 ## 🔌 Plugins
 
 ### New Plugins
 
-- **[Plugin Name](link)** by @author: Description.
-- **[Plugin Name](link)** by @author: Description.
+- [Plugin Name](link): Description.
 
-### Plugin Updates
+### Updated Plugins
 
-- **[Plugin Name](link)**: Now supports X, Y, Z.
-
-## 🎨 Themes
-
-- **[Theme Name](link)** by @author: Description.
-
-## 🛠️ Workflows & Tips
-
-*Community shared workflows, tips, and tricks.*
-
-- [Title](link) by @author
+- [Plugin Name](link) vX.X.X released.
 
 ## 🗣️ Community Discussions
 
-*Interesting discussions from the forum, Discord, or Reddit.*
+- [Title](link)
 
-## 🔗 Links
+## 🛠️ Workflows & Tips
 
-*Other relevant links.*
+- [Title](link)

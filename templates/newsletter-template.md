@@ -15,19 +15,14 @@ Want *This Week in Obsidian* in your inbox? [Subscribe here](https://substack.co
 
 [Plugin Name](link) by author is a plugin that...
 
-## 🔌 Plugins
-
-### New Plugins
+## 🔌 Plugins Worth Checking Out
 
 - [Plugin Name](link): Description.
 
-### Updated Plugins
-
-- [Plugin Name](link) vX.X.X released.
-
 ## 🗣️ Community Discussions
 
-- [Title](link)
+- Feature Request: [Title](link)
+- Help: [Title](link)
 
 ## 🛠️ Workflows & Tips
 

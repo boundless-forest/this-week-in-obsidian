@@ -4,7 +4,7 @@
 
 **This Week in Obsidian** is a weekly newsletter published every Tuesday, dedicated to tracking the progress and community of [Obsidian](https://obsidian.md/). Our target audience includes Obsidian users, plugin developers, and knowledge management enthusiasts who want to stay up-to-date with the latest gems, plugins, themes, and workflows.
 
-[Subscribe on Substack](https://substack.com/@thisweekinobsidian) to get the latest issue in your inbox.
+[Subscribe on Substack](https://thisweekinobsidian.substack.com) to get the latest issue in your inbox.
 
 ## Workflow
 

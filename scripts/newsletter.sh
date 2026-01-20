@@ -9,9 +9,48 @@ TEMPLATE_FILE="$BASE_DIR/templates/newsletter-template.md"
 command=$1
 
 function get_next_tuesday() {
-    # If today is Tuesday, we assume we are creating a draft for the NEXT week.
-    # If today is not Tuesday, "next tuesday" gives the upcoming Tuesday.
-    date -d "next tuesday" +%Y-%m-%d
+    # Return the upcoming Tuesday.
+    # If run on a Tuesday, return today's date.
+    local dow days_ahead
+
+    # Mon=1 ... Sun=7
+    dow=$(date +%u)
+
+    if (( dow <= 2 )); then
+        days_ahead=$((2 - dow))
+    else
+        days_ahead=$((7 - dow + 2))
+    fi
+
+    date -d "+${days_ahead} days" +%Y-%m-%d
+}
+
+function ensure_no_future_drafts() {
+    local target_date=$1
+    local future_drafts=()
+
+    shopt -s nullglob
+    for f in "$DRAFTS_DIR"/*-issue-*.md; do
+        local base
+        base=$(basename "$f")
+
+        if [[ $base =~ ^([0-9]{4}-[0-9]{2}-[0-9]{2})-issue-[0-9]+\.md$ ]]; then
+            local file_date=${BASH_REMATCH[1]}
+
+            # ISO-8601 dates sort lexicographically
+            if [[ "$file_date" > "$target_date" ]]; then
+                future_drafts+=("$base")
+            fi
+        fi
+    done
+    shopt -u nullglob
+
+    if (( ${#future_drafts[@]} > 0 )); then
+        echo "Found draft(s) dated after $target_date in $DRAFTS_DIR:"
+        printf ' - %s\n' "${future_drafts[@]}"
+        echo "Archive/remove them (or rename) before creating a new draft."
+        exit 1
+    fi
 }
 
 function get_next_issue_number() {
@@ -48,6 +87,9 @@ function get_next_issue_number() {
 
 function create_draft() {
     local next_date=$(get_next_tuesday)
+
+    ensure_no_future_drafts "$next_date"
+
     local issue_num=$(get_next_issue_number)
     local filename="${next_date}-issue-${issue_num}.md"
     local filepath="$DRAFTS_DIR/$filename"

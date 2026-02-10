@@ -10,13 +10,13 @@ command=$1
 
 function get_next_tuesday() {
     # Return the upcoming Tuesday.
-    # If run on a Tuesday, return today's date.
+    # Always return the next Tuesday.
     local dow days_ahead
 
     # Mon=1 ... Sun=7
     dow=$(date +%u)
 
-    if (( dow <= 2 )); then
+    if (( dow < 2 )); then
         days_ahead=$((2 - dow))
     else
         days_ahead=$((7 - dow + 2))

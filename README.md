@@ -2,18 +2,36 @@
 
 ![Banner](assets/banner.png)
 
-**This Week in Obsidian** is a weekly newsletter published every Tuesday, dedicated to tracking the progress and community of [Obsidian](https://obsidian.md/). Our target audience includes Obsidian users, plugin developers, and knowledge management enthusiasts who want to stay up-to-date with the latest gems, plugins, themes, and workflows.
+**This Week in Obsidian** is a weekly newsletter published every Tuesday, dedicated to tracking the progress and community around [Obsidian](https://obsidian.md/).
 
-[Subscribe on Substack](https://thisweekinobsidian.substack.com) to receive the latest issue in your inbox. You can also contribute to upcoming editions by editing the [draft](./drafts/).
+It covers official announcements, plugins, tools, community discussions, workflows, and other resources that may be useful to Obsidian users.
+
+[Subscribe on Substack](https://thisweekinobsidian.substack.com) to receive the latest issue in your inbox.
+
+## Suggest content
+
+Have you found—or created—a plugin, tool, workflow, or community resource that may be useful to Obsidian users?
+
+[Open a content suggestion](https://github.com/boundless-forest/this-week-in-obsidian/issues/new?template=content-suggestion.yml) and tell us briefly what it is and why it may be worth sharing.
+
+Self-submissions are welcome. Please indicate whether you are the creator or affiliated with the project.
+
+Suggestions are reviewed editorially. Submitting something does not guarantee inclusion, and accepted suggestions may appear in a later issue rather than the next one.
+
+Please do not open pull requests that add content directly to newsletter drafts or archived issues. These files are produced through the newsletter's generation and editorial workflow.
+
+Pull requests are still welcome for improvements to documentation, templates, scripts, and other repository tooling.
 
 ## Workflow
 
-The production cycle is straightforward: we start a new draft at the beginning of the week using the CLI tool, curate content (news, plugins, tips) throughout the week, review and polish the draft on Monday or Tuesday, publish it to Substack, and finally archive the published issue using the CLI tool.
+A new newsletter draft is generated each week and then reviewed and edited before publication on Tuesday.
 
-## Folder Structure
+After publication, the completed issue is stored in the archive. Published issues should not be modified to add newly submitted content.
 
-- **drafts/**: Contains the current work-in-progress newsletter issue.
-- **archive/**: Stores past issues organized by year (e.g., `archive/2025/`).
-- **templates/**: Holds the standard Markdown template for new issues.
-- **assets/**: Stores images and static resources.
-- **scripts/**: Contains helper scripts for automation.
+## Repository structure
+
+- **drafts/**: Current work-in-progress newsletter issue.
+- **archive/**: Published issues organized by year.
+- **templates/**: Newsletter Markdown templates.
+- **assets/**: Images and static resources.
+- **scripts/**: Repository helper scripts.

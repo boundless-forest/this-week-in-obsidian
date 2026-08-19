@@ -13,11 +13,3 @@ It covers official announcements, plugins, tools, community discussions, workflo
 Have something useful to share with Obsidian users?
 
 [Submit an issue](https://github.com/boundless-forest/this-week-in-obsidian/issues/new?template=content-suggestion.yml) to suggest a plugin, tool, workflow, or community resource for a future edition.
-
-## Repository structure
-
-- **drafts/**: Current work-in-progress newsletter issue.
-- **archive/**: Published issues organized by year.
-- **templates/**: Newsletter Markdown templates.
-- **assets/**: Images and static resources.
-- **scripts/**: Repository helper scripts.

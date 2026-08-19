@@ -1,0 +1,38 @@
+name: Suggest content
+description: Suggest a plugin, tool, workflow, or community resource for a future issue
+title: "[Suggestion] "
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: What is the name of the plugin, tool, or resource?
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: Provide the official website, GitHub repository, forum post, or other primary link.
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Why is it useful?
+      description: Briefly explain what it does and why Obsidian users may find it useful.
+      placeholder: A few sentences are enough.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Are you the creator or affiliated with this project?
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
